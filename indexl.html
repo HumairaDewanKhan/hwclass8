@@ -1,0 +1,180 @@
+<!Doctype html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Quick</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<style>
+
+	.intro {
+  background-color: pink;
+}
+#firstname {
+  background-color: yellow;
+}
+* {
+  background-color: pink;
+}
+p {
+  background-color: hotpink;
+}
+p.intro {
+  background-color: yellow;
+}
+div p {
+  background-color: hotpink;
+}
+div > p {
+  background-color: pink;
+}
+p ~ ul {
+  background: #ff0000;
+}
+a[target] {
+  background-color: greenyellow;
+}
+[lang|="en"] {
+  background: yellow;
+}
+div[class^="test"] {
+  background: #ffff00;
+}
+input:checked {
+  height: 50px;
+  width: 50px;
+}
+input:default {
+  box-shadow: 0 0 1px 1px red;
+}
+<style> 
+input[type=text]:enabled {
+  background: #ffff00;
+}
+input[type=text]:disabled {
+  background: #dddddd;
+}
+p:empty {
+  width: 100px;
+  height: 20px;
+  background: #ff0000;
+}
+
+
+</style>
+<body>
+
+
+<h1>Demo of the .class selector</h1>
+
+<div class="intro">
+  <p>My name is Humaira.</p>
+  <p>I live in Dhaka.</p>
+</div>
+
+<p>My best friend is xyz.</p>
+
+<p class="intro">My best friend is xyz.</p>
+
+<div class="intro">
+  <p id="firstname">My name is Donald.</p>
+  <p id="hometown">I live in Duckburg.</p>
+</div>
+
+
+<h1>Demo of the * selector</h1>
+
+<div class="intro">
+  <p id="firstname">My name is Humaira.</p>
+  <p id="hometown">I live in Dhaka.</p>
+</div>
+<div>
+  <p id="firstname">My name is Humaira.</p>
+  <p id="hometown">I live in Dhaka.</p>
+</div>
+
+
+
+</style>
+</head>
+<body>
+
+<h1>Demo of the element > element selector</h1>
+
+<div>
+  <h2>My name is Donald</h2>
+  <p>I live in Dhaka</p>
+</div>
+
+<div>
+  <span><p>I will not be xyz.</p></span>
+</div>
+
+<p>My best friend is Humaira.</p>
+<div>A div element.</div>
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<p>The first paragraph.</p>
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<h2>Another list</h2>
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<h1>Demo of the [attribute] selector</h1>
+
+<p>Links with a target attribute is styled with a yellow background:</p>
+
+<a href="https://www.w3schools.com">W3schools.com</a><br>
+<a href="https://www.google.com" target="_blank">Google.com</a><br>
+<a href="https://www.microsoft.com" target="_blank">Microsoft.com</a>
+
+<h1>Demo of the [attribute|=value] selector</h1>
+
+<p>Elements with a lang attribute with value "en" is styled with a yellow background:</p>
+
+<p lang="en">Hello!</p>
+<p lang="en-us">Hi!</p>
+<p lang="en-gb">Ello!</p>
+<p lang="us">Hi!</p>
+<p lang="no">Hei!</p>
+
+<div class="first_test">The first div element.</div>
+<div class="second">The second div element.</div>
+<div class="test">The third div element.</div>
+<p class="test">This is some text in a paragraph.</p>
+
+<form action="">
+  <input type="radio" checked="checked" value="male" name="gender"> Male<br>
+  <input type="radio" value="female" name="gender"> Female<br>
+  <input type="checkbox" checked="checked" value="Bike"> I have a bike<br>
+  <input type="checkbox" value="Car"> I have a car 
+</form>
+
+<form action="">
+  First name: <input type="text" value="Mickey"><br>
+  Last name: <input type="text" value="Mouse"><br>
+  Country: <input type="text" disabled="disabled" value="Disneyland">
+</form>
+
+<p></p>
+<p>A paragraph.</p>
+<p>Another paragraph.</p>
+
+
+</body>
+</html>
